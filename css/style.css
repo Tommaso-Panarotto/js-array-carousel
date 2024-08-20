@@ -10,3 +10,38 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/*Carousel*/
+
+#carousel {
+    height: 500px;
+    width: 900px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#carousel .gallery {
+    height: 100%;
+    text-align: center;
+}
+
+#carousel img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.fa-solid {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    cursor: pointer;
+    padding: 20px 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 5px;
+}
+
+#next {
+    right: 0;
+}

@@ -33,6 +33,9 @@ nextButton.addEventListener('click', function () {
     //incremento current active
     currentActiveImage++;
 
+    //verifico di avere ancora immagini in cui scorrere altrimenti ricomincio
+    if (currentActiveImage === sources.length) currentActiveImage = 0;
+
     //aggiungo classe active
     images[currentActiveImage].classList.add('active');
 }
@@ -46,6 +49,9 @@ prevButton.addEventListener('click', function () {
 
     //decremento current active
     currentActiveImage--;
+
+    //verifico di avere ancora immagini in cui scorrere altrimenti ricomincio
+    if (currentActiveImage === -1) currentActiveImage = sources.length - 1;
 
     //aggiungo classe active
     images[currentActiveImage].classList.add('active');

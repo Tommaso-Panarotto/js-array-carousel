@@ -15,7 +15,7 @@
 
 #carousel {
     height: 500px;
-    width: 900px;
+    width: 100%;
     margin: 20px auto;
     position: relative;
 }

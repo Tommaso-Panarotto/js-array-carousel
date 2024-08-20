@@ -20,9 +20,8 @@
     position: relative;
 }
 
-#carousel .gallery {
+#carousel #gallery {
     height: 100%;
-    text-align: center;
 }
 
 #carousel img {
@@ -32,8 +31,9 @@
     display: none;
 }
 
-#carousel .active{
+#carousel img.active{
     display: block;
+    margin: 0 auto;
 }
 
 .fa-solid {

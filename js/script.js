@@ -11,8 +11,14 @@ const carouselGallery = document.getElementById('gallery');
 let imgs = '';
 
 for (let i = 0; i < sources.length; i++) {
-    imgs += `<img alt="game-${i + 1}" src="${sources[i]}">`
+    imgs += `<img alt="game-${i + 1}" src="${sources[i]}">`;
 }
 
 //Metto in pagina
 carouselGallery.innerHTML = imgs;
+
+//CAROSELLO DINAMICO
+let currentActiveImage = 0;
+//raccolgo le immagini e rendo visibile
+const images = document.querySelectorAll('#carousel img');
+images[currentActiveImage].classList.add('active');

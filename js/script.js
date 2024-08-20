@@ -19,6 +19,35 @@ carouselGallery.innerHTML = imgs;
 
 //CAROSELLO DINAMICO
 let currentActiveImage = 0;
+
 //raccolgo le immagini e rendo visibile
 const images = document.querySelectorAll('#carousel img');
 images[currentActiveImage].classList.add('active');
+
+//Reagisco al next
+nextButton.addEventListener('click', function () {
+
+    //rimuovo classe active
+    images[currentActiveImage].classList.remove('active');
+
+    //incremento current active
+    currentActiveImage++;
+
+    //aggiungo classe active
+    images[currentActiveImage].classList.add('active');
+}
+)
+
+//Reagisco al previous
+prevButton.addEventListener('click', function () {
+
+    //rimuovo classe active
+    images[currentActiveImage].classList.remove('active');
+
+    //decremento current active
+    currentActiveImage--;
+
+    //aggiungo classe active
+    images[currentActiveImage].classList.add('active');
+}
+)

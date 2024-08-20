@@ -63,6 +63,7 @@ prevButton.addEventListener('click', function () {
     //rimuovo classe active
     images[currentActiveImage].classList.remove('active');
     thumb[currentActiveImage].classList.remove('active');
+    thumb[currentActiveImage].classList.add('choose');
 
     //decremento current active
     currentActiveImage--;
@@ -73,5 +74,29 @@ prevButton.addEventListener('click', function () {
     //aggiungo classe active
     images[currentActiveImage].classList.add('active');
     thumb[currentActiveImage].classList.add('active');
+    thumb[currentActiveImage].classList.remove('choose');
 }
 )
+
+//seleziono immagine dal thumbnails
+for (let i = 0; i < thumb.length; i++) {
+    const thumbnail = thumb[i];
+
+    thumbnail.addEventListener('click', function () {
+
+        //rimuovo classe active
+        images[currentActiveImage].classList.remove('active');
+        thumb[currentActiveImage].classList.remove('active');
+        thumb[currentActiveImage].classList.add('choose');
+
+        //incremento current active
+        currentActiveImage = i;
+
+        //aggiungo classe active
+        images[currentActiveImage].classList.add('active');
+        thumb[currentActiveImage].classList.add('active');
+        thumb[currentActiveImage].classList.remove('choose');
+
+    }
+    )
+}

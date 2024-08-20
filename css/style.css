@@ -64,7 +64,6 @@
 #thumbnails img{
     height: 100px;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 #thumbnails .active{
@@ -73,5 +72,6 @@
 }
 
 #thumbnails .choose:hover{
-    box-shadow: 0 0 10px dodgerblue;
+    box-shadow: 0 0 20px dodgerblue;
+    cursor: pointer;
 }
